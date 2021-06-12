@@ -11,7 +11,7 @@ const WeatherInfo = (props) => {
             }
             {
                 props.temperature ?
-                    <div className="card card-info">
+                    <div className="card card-info mt-1 text-center bg-transparent border-light">
                         <p>
                             Location: {props.city}, {props.country}
                         </p>
@@ -26,7 +26,7 @@ const WeatherInfo = (props) => {
                         </p>
                     </div>
                 :
-                <div className="card card-info">
+                <div className="card card-info mt-2 bg-transparent border-light">
                     <p>No request yet</p>
                 </div>
             }
