@@ -1,0 +1,25 @@
+.input-data{
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+.input-item{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    border-bottom: 2px solid silver;
+}
+ .input-item:focus ~ label ,
+ .input-item:valid ~ label {
+    transform: translateY(-15px);
+    font-size: 15px;
+}
+ .input-data label {
+    position: relative;
+    bottom: 28px;
+    left: 0px;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease
+}
